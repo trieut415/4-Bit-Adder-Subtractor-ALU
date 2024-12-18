@@ -1,39 +1,17 @@
-# Lab 1: Design 4-bit binary Adder-Subtractor and ALU
- Due Date: Due by October 14, 2022
+# 4-bit Binary Adder-Subtractor and ALU Design
 
-**Please submit the lab in the format mentioned below.**
+This project focuses on designing two components: a 4-bit binary adder-subtractor and a 4-bit Arithmetic Logic Unit (ALU).
 
-## Submission instructions
-There are two main parts in lab-1: 1) Designing a 4-bit adder/subtractor; 2) Designing a 4-bit ALU.
+## Folder Structure
+The project is organized into two main directories:
+1. **add_sub_4_bit:** Contains the implementation of the 4-bit binary adder-subtractor. The solution is in the `add_sub_4_bit.v` file, along with any supporting Verilog modules and testbench files.
+2. **alu_4_bit:** Contains the implementation of the 4-bit ALU. The solution is in the `alu_4_bit.v` file, along with additional supporting Verilog modules and testbench files.
 
-### Folders Structure
-There are following 2 folders in the main folder ("EC311_Lab1_Template"):
-  - (1) "add_sub_4_bit"
-  - (2) "alu_4_bit"
-  
-You will place the solution code for part-1 of lab-1, i.e., the 4-bit binary adder-subtractor in the folder named "add_sub_4_bit/hdl", and the solution code for part-2 of lab-1, i.e., the 4-bit Arithmetic-Logic Unit (ALU) in the folder named "alu_4_bit/hdl".
+## Implementation Details
+- **Adder-Subtractor:** The 4-bit binary adder-subtractor is designed to perform addition and subtraction operations using a compact logic design.
+- **ALU:** The 4-bit ALU supports a range of logical and arithmetic operations. It uses modular Verilog components for clarity and scalability.
 
-### Lab-1 Part-1 Folder Structure & Signal Naming
-The main solution code for the part-1 of lab-1 should be inside the file "add_sub_4_bit.v" in the following path:
-- *EC311_Lab1_Template/add_sub_4_bit/hdl/add_sub_4_bit.v*
-- Verilog files of other modules that are being instantiated in the top module "add_sub_4_bit.v" should also be present in the following path: *EC311_Lab1_Template/add_sub_4_bit/hdl/*
-- Do not change the names of the input/output ports or the module name for your top file.
+## Testing
+Testbenches are provided for both the adder-subtractor and ALU, allowing for thorough simulation and validation of the designs. The testbenches ensure correct functionality for all operations and edge cases.
 
-Upload your testbench files here:
-- *EC311_Lab1_Template/add_sub_4_bit/tb*
-
-### Lab-1 Part-2 Folder Structure & Signal Naming
-The main solution verilog code for the part-2 of lab-1 should be inside the file "alu_4_bit.v" in the following path:
-- *EC311_Lab1_Template/alu_4_bit/hdl/alu_4_bit.v*
-- Verilog files of other modules that are being instantiated in the top module "alu_4_bit.v" should also be present in the following path: *EC311_Lab1_Template/alu_4_bit/hdl/*
-- Do not change the names of the input/output ports or the module name for your top file.
-
-Upload your testbench files here:
-- *EC311_Lab1_Template/alu_4_bit/tb*
-
-## Change the YML file inside EC311_Lab1_Template/.github/workflows/classroom.yml
-
-Do the following steps so that your code can be graded:
- - Copy the entire contents of the file *EC311_Lab1_Template/.github/workflows/copy_to_classroom.yml* and paste it to the file **EC311_Lab1_Template/.github/workflows/classroom.yml** (remove the entire contents of classroom.yml first)
-
-// random text for testing please ignore
+The project structure is clean and modular, making it easy to integrate, test, and expand.
